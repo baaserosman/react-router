@@ -20,7 +20,7 @@ const InstructorDetails = () => {
       })
       .then((data) => setUser(data))
       .catch((err) => console.log(err));
-  }, []);
+  }, [id]);
 
   if (error) {
     return <NotFound />;
